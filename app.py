@@ -5,6 +5,9 @@ import os
 app = Flask(__name__)
 app.secret_key = 'super_secret_key'
 
+# Vercel needs the app object to be available as "app"
+# which it already is, but we ensure it's at the top level.
+
 @app.route('/')
 def index():
     if 'user' in session:

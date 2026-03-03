@@ -1,8 +1,9 @@
 import json
 import os
 
-USERS_FILE = 'data/users.json'
-STUDENTS_FILE = 'data/students.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+USERS_FILE = os.path.join(BASE_DIR, 'data', 'users.json')
+STUDENTS_FILE = os.path.join(BASE_DIR, 'data', 'students.json')
 
 def load_json(file_path):
     if not os.path.exists(file_path):
