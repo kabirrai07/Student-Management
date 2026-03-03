@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "darshan",
+        "attendance": {
+            "2026-03-03": null,
+            "2026-03-04": "Present"
+        }
+    },
+    {
+        "id": 2,
+        "name": "kabir rai ",
+        "attendance": {
+            "2026-03-04": "Present",
+            "2026-03-03": null
+        }
+    },
+    {
+        "id": 3,
+        "name": "Dev",
+        "attendance": {
+            "2026-03-04": "Absent",
+            "2026-03-03": null
+        }
+    },
+    {
+        "id": 4,
+        "name": "Dev",
+        "teacher_username": "kumarrai",
+        "attendance": {
+            "2026-03-03": "Present"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Dev",
+        "teacher_username": "darshan",
+        "attendance": {
+            "2026-03-04": "Absent"
+        }
+    }
+]
