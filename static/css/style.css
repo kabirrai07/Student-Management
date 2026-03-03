@@ -169,6 +169,91 @@ th {
     background: var(--error);
 }
 
+/* --- Responsiveness --- */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .glass-card {
+        padding: 30px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Stack navigation */
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    /* Stack Admin teacher registration form */
+    form[action*="register_teacher"],
+    form[action*="add_student"] {
+        display: flex !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Student Analytics Grid */
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Table scrolling on small screens */
+    .glass-card {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+        /* Ensure table doesn't squash too much */
+    }
+
+    th,
+    td {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+
+    /* Adjust buttons for mobile */
+    button {
+        padding: 12px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 450px;
+    }
+}
+
 .logout-link {
     color: var(--text-dim);
     text-decoration: none;
